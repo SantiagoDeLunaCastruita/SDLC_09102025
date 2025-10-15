@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}carros antiguos{% endblock %}
+
+{% block info %}
+<div class="container text-center bg bg-dark-subtle">
+    <div class="container text-center bg-warning" id="las marabillas del mundo">
+      <h1>carros antiguos</h5>
+    </div>
+  </div>
+  <div class="container text bg-light">
+    <p>Los vehículos antiguos representan el inicio de la movilidad moderna. A finales del siglo XIX, los inventores
+      comenzaron a experimentar con motores de combustión interna y chasis de metal, marcando el nacimiento del
+      automóvil. Estas primeras máquinas no solo cambiaron la forma en que las personas se transportaban, sino que
+      también dieron inicio a una nueva era industrial y tecnológica.
+
+      Con el paso del tiempo, muchas marcas dejaron huella en la historia del automovilismo. A continuación, te
+      presentamos cinco vehículos antiguos emblemáticos, cada uno de una marca diferente.</p>
+    <h2>Ford Model T (1908)</h2>
+    <p>El Ford Model T fue el primer automóvil producido en masa gracias a la línea de ensamblaje creada por Henry Ford.
+      Accesible, resistente y fácil de reparar, se convirtió en el primer coche popular del mundo. Su llegada marcó el
+      inicio de la era del automóvil.
+      Imagen sugerida: Ford Model T negro con fondo de época (1908).</p>
+    <h3>marca:</h3>
+    <p>Ford (Estados Unidos)</p>
+    
+    <img src="{{url_for('static',filename='imagenes/Ford Model T (1908).jpeg' )}}" alt="Armadillo">
+    <h2>Chevrolet Bel Air (1957)</h2>
+    <p>El Bel Air de 1957 es un ícono del diseño estadounidense de los años 50. Con sus aletas traseras cromadas,
+      colores brillantes y su estilo elegante, representó la prosperidad y el glamour de la época.
+      Imagen sugerida: Chevrolet Bel Air rojo y blanco, estilo clásico.</p>
+    <h3>Marca:</h3>
+    <p>Chevrolet (Estados Unidos)</p>
+    
+    <img src="{{url_for('static',filename='imagenes/Chevrolet Bel Air (1957).jpeg' )}}" alt="Chevrolet Bel Air (1957)">
+    <h2>Volkswagen Beetle (1938)</h2>
+    <p>Conocido como el “Vocho”, este pequeño coche fue diseñado para ser económico y duradero. Su forma redondeada y su
+      motor trasero lo hicieron único. Se convirtió en uno de los autos más vendidos de todos los tiempos.
+      Imagen sugerida: Volkswagen Beetle clásico color crema o celeste.</p>
+    <h3>marca:</h3>
+    <p>Volkswagen Beetle (1938)</p>
+    
+    <img src="{{url_for('static',filename='imagenes/Volkswagen Beetle (1938).jpeg' )}}" alt="Volkswagen Beetle (1938)">
+    <h2>Rolls-Royce Silver Ghost (1907)</h2>
+    <p>El Silver Ghost fue considerado “el mejor automóvil del mundo” por su lujo, suavidad al conducir y confiabilidad.
+      Representa el inicio de la fama de Rolls-Royce como símbolo de elegancia y excelencia mecánica.
+      Imagen sugerida: Rolls-Royce Silver Ghost plateado con chofer de época.</p>
+    <h3>marca:</h3>
+    <p>Rolls-Royce (Reino Unido)</p>
+  
+        <img src="{{url_for('static',filename='imagenes/Rolls-Royce Silver Ghost (1907).jpeg' )}}" alt="Rolls-Royce Silver Ghost (1907)">
+    <h2>Ferrari 250 GTO (1962)</h2>
+    <p>El Ferrari 250 GTO es uno de los autos más valiosos y admirados de la historia. Diseñado para competir en
+      carreras de resistencia, combina potencia, diseño aerodinámico y elegancia italiana.
+      Imagen sugerida: Ferrari 250 GTO rojo en pista o museo.</p>
+    <h3>Marca:</h3>
+    <p>Ferrari (Italia)</p>
+
+    <img src="{{url_for('static',filename='imagenes/Ferrari 250 GTO (1962).jpeg' )}}" alt="Ferrari 250 GTO (1962)">
+  </div>
+
+            {% endblock %}

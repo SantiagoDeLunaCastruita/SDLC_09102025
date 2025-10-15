@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}inicio{% endblock %}
+
+
+{% block info %}
+<ol>
+    <h1>inicio</h5>
+        <div class="container text-center bg-light">
+            <p>Bienvenido a este espacio donde la pasión y la curiosidad se unen.
+Aquí podrás explorar las diferentes formas del amor, conocer carros antiguos que marcaron historia, descubrir las maravillas del mundo que nos dejan sin aliento y admirar animales exóticos que muestran la increíble diversidad de la naturaleza.
+
+Cada sección está pensada para inspirarte, despertar emociones y recordarte que el mundo está lleno de belleza: en las personas, en los paisajes, en la historia y en cada ser vivo que habita nuestro planeta.
+
+¡Prepárate para viajar, sentir y maravillarte en un mismo lugar! 🌎💞🚗🦜</p>
+
+
+            <ol>
+            </ol>
+
+            <img src="{{url_for('static',filename='imagenes/armadillo.jpeg' )}}" alt="Armadillo">
+            <img src="{{url_for('static',filename='imagenes/pollo2.jpeg' )}}" alt="Armadillo">
+            {% endblock %}
