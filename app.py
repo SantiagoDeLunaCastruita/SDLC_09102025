@@ -29,6 +29,14 @@ def registro():
 @app.route('/login')
 def login():
     return render_template("inicio de secion.html")
+@app.route('/register', methods=('GET', 'POST'))
+def register_user():
+    
+    if request.method == 'POST':
+        nombredelusuarios = request.form['nombredelusuarios']
+    correoelectronico = request.form['correoelectronico']
+    contrasena = request.form['contrasena']   
+    
 
 from flask import render_template
 if __name__ == '__main__':
