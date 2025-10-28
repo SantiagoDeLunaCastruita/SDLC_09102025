@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi sitio{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body 
+
+    class="bg-light">
+
+
+
+
+  <ul class="nav nav-tabs bg-primary justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active bg-light text-primary fw-bold" aria-current="page" href="/">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="/animaleexoticos">Animales exóticos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="/carrosantiguos">Carros antiguos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="/marabillasdelelmundo">Maravillas del mundo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="/acercade">Acerca de</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="/registro">registro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="/login">inicio de secion</a>
+    </li>
+  </ul>
+
+  <section>    {% block info %}
+    
+    {% endblock %}</section>
+  
+<h1> Deluna Castruita Santiago 9/10/2025</h1>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

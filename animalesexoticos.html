@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}animales exoticos{% endblock %}
+
+{% block info %}
+<div class="container text-center bg bg-dark-subtle">
+    <div class="container text-center bg-success" >
+      <h1>animales exoticos</h5>
+    </div>
+  </div>
+  
+        </div>
+
+  <div class="container text text bg-light">
+    <h1>los animales exotico:</h1>
+    <p>El reino animal es increíblemente diverso y fascinante. Los animales exóticos son especies poco comunes que
+      destacan por su
+      aspecto, comportamiento o el lugar donde habitan. Estos animales pueden encontrarse en diferentes ambientes:
+      acuáticos, terrestres y aéreos. Cada uno cumple
+      un papel importante en los ecosistemas, ayudando a mantener el equilibrio natural del planeta.</p>
+
+    <h1>Animales Acuáticos</h1>
+
+    <h2>Pez Mandarín (Synchiropus splendidus)</h2>
+    <p>Este pequeño pez de colores intensos vive en los arrecifes de coral del océano Pacífico. Es famoso por sus tonos
+      azul, verde y naranja brillantes. A pesar de su belleza, es muy tímido y difícil
+      de mantener en acuarios.</p>
+ 
+    <img src="{{url_for('static',filename='imagenes/pz1.jpeg' )}}" alt="pz1">
+
+    <h2>Pulpo Dumbo (Grimpoteuthis)</h2>
+    <p>Llamado así por las aletas que parecen orejas, similares a las del personaje de Disney “Dumbo”. Habita en las
+      profundidades marinas y puede mover sus aletas para desplazarse con elegancia. Es uno de los pulpos más curiosos y
+      adorables del océano.</p>
+    de mantener en acuarios.</p>
+
+    <img src="{{url_for('static',filename='imagenes/descarga (1).jpeg' )}}" alt="descarga (1)">
+    <h1>Animales Terrestres</h1>
+    <h2>Okapi (Okapia johnstoni)</h2>
+    <p>Pariente cercano de la jirafa, vive en los bosques húmedos del Congo. Tiene patas con rayas similares a las de
+      una cebra, pero su cuerpo es marrón oscuro. Es un animal tímido y fue descubierto por la ciencia apenas en el
+      siglo XX.</p>
+
+    <img src="{{url_for('static',filename='imagenes/descarga.jpeg' )}}" alt="descarga">
+    <h2>Pangolín (Manis spp.)</h2>
+    <p>Cubierto por escamas, el pangolín es el único mamífero con esta característica. Se alimenta de hormigas y
+      termitas, y cuando se siente amenazado, se enrolla como una bola para protegerse. Lamentablemente, es uno de los
+      animales más traficados del mundo.</p>
+    
+    <img src="{{url_for('static',filename='imagenes/armadillo.jpeg' )}}" alt="Armadillo">
+    <h1>Animales Aéreos</h1>
+    <h2>Quetzal (Pharomachrus mocinno)</h2>
+    <p>Es un ave de plumaje verde brillante y cola larga, símbolo de libertad en la cultura maya. Habita en los bosques
+      nubosos de Centroamérica y se alimenta principalmente de frutas. Su belleza lo convierte en una de las aves más
+      admiradas del planeta.</p>
+    
+    <img src="{{url_for('static',filename='imagenes/pajaro.jpeg' )}}" alt="pajaro">
+    <h2>Cálao de Yelmo (Rhinoplax vigil)</h2>
+    <p>Esta ave de gran tamaño vive en el sudeste asiático. Tiene un “casco” sólido en el pico, que utiliza para
+      producir sonidos durante el vuelo o los combates. Está en peligro de extinción por la caza y la pérdida de su
+      hábit</p>
+
+    <img src="{{url_for('static',filename='imagenes/pollo2.jpeg' )}}" alt="pollo2">
+            {% endblock %}

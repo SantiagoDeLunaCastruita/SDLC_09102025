@@ -22,21 +22,39 @@ def marabillas_del_mundo():
 def acercade():
     return render_template("acerca de.html")
 
-@app.route('/registro')
+@app.route('/registro', methods=['GET', 'POST'])
 def registro():
+    if request.method == 'POST':
+        usuario = request.form['usuario']
+        contraseña = request.form['password']
+        if usuario and contraseña:
+            session['user'] = usuario  
+            flash('Inicio de sesión exitoso.', 'success')
+            return redirect(url_for('index'))
+        else:
+            flash(f'Datos incorrectos. Intenta nuevamente.', 'danger')
     return render_template("formulario.html")
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template("inicio de secion.html")
-@app.route('/register', methods=('GET', 'POST'))
-def register_user():
-    
     if request.method == 'POST':
-        nombredelusuarios = request.form['nombredelusuarios']
-    correoelectronico = request.form['correoelectronico']
-    contrasena = request.form['contrasena']   
-    
+        usuario = request.form['usuario']
+        contraseña = request.form['password']
+        if usuario and contraseña:
+            session['user'] = usuario  
+            flash('Inicio de sesión exitoso.', 'success')
+            return redirect(url_for('index'))
+        else:
+            flash(f'Datos incorrectos. Intenta nuevamente.', 'danger')
+
+    return render_template('login.html')
+@app.route('/logout')
+def logout():
+    session.pop('user', None) 
+    flash('Sesión cerrada correctamente.', 'info')
+    return redirect(url_for('index'))
+
+
 
 from flask import render_template
 if __name__ == '__main__':

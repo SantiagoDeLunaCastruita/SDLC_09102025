@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}marabillas de el mundo {% endblock %}
+
+{% block info %}
+<div class="container text-center bg bg-dark-subtle">
+    <div class="container text-center bg-info" id="las marabillas del mundo">
+      <h1>las marabillas de el mundo</h5>
+    </div>
+  </div>
+  <div class="container text bg-light">
+    <h1>las marabillas de el mundo</h1>
+    <p>Las maravillas del mundo son estructuras y sitios naturales que destacan por su belleza, historia y significado
+      cultural. A lo largo de la historia, diferentes civilizaciones han creado obras impresionantes que reflejan su
+      ingenio y creatividad. A continuación, te presentamos algunas de las maravillas más reconocidas a nivel mundial.
+    </p>
+    <h2>Gran Muralla China</h2>
+    <p>La Gran Muralla China es una de las estructuras más impresionantes jamás construidas. Se extiende por más de
+      13,000 millas y fue construida para proteger a China de invasiones. Su construcción comenzó en el siglo VII a.C. y
+      continuó durante varios siglos.
+      Imagen sugerida: Vista panorámica de la Gran Muralla serpenteando por las montañas.</p>
+
+    <img src="{{url_for('static',filename='imagenes/La Gran Muralla China (China).jpeg' )}}" alt="Armadillo">
+    <h2>Machu Picchu</h2>
+    <p>Ubicado en Perú, Machu Picchu es una antigua ciudad inca situada en lo alto de los Andes. Descubierta en 1911, es
+      famosa por su arquitectura impresionante y su entorno natural espectacular. Se cree que fue un importante centro
+      religioso y administrativo.
+      Imagen sugerida: Vista aérea de Machu Picchu con montañas al fondo.</p>
+
+    <img src="{{url_for('static',filename='imagenes/Machu Picchu (Perú).jpeg' )}}" alt="Machu Picchu (Perú)">
+    <h2>Coliseo Romano</h2>
+    <p>El Coliseo es un anfiteatro gigante en Roma, Italia, que data del siglo I d.C. Fue utilizado para espectáculos
+      públicos, como combates de gladiadores y representaciones teatrales. Es un símbolo de la ingeniería romana y una
+      de las atracciones turísticas más visitadas del mundo.
+      Imagen sugerida: Vista exterior del Coliseo con turistas alrededor.</p>
+
+    <img src="{{url_for('static',filename='imagenes/coliseo romano.jpeg' )}}" alt="coliseo romano">
+    <h2>Taj Mahal</h2>
+    <p>El Taj Mahal, ubicado en India, es un mausoleo de mármol blanco construido en el siglo XVII por el emperador Shah
+      Jahan en honor a su esposa favorita. Es conocido por su arquitectura impresionante y sus jardines simétricos, y es
+      considerado una de las maravillas del mundo.
+      Imagen sugerida: Vista frontal del Taj Mahal reflejado en el estanque.</p>
+    
+    <img src="{{url_for('static',filename='imagenes/Taj Mahal (India).jpeg' )}}" alt="Taj Mahal (India)">
+    <h2>Petra</h2>
+    <p>Petra es una antigua ciudad tallada en roca en Jordania. Fue la capital del reino nabateo y es famosa por su
+      arquitectura única y su sistema de canales de agua. Petra es un sitio arqueológico impresionante y una de las
+      nuevas siete maravillas del mundo.
+      Imagen sugerida: La fachada del Tesoro de Petra con turistas delante.</p>
+  
+    <img src="{{url_for('static',filename='imagenes/Petra (Jordania).jpeg' )}}" alt="Petra (Jordania)">
+    <h2><h2>Petra</h2></h2>
+    <p>La única maravilla del mundo moderno ubicada en México es Chichén Itzá, una antigua ciudad maya en la península de Yucatán. Es una de las Siete Maravillas del Mundo, reconocida por su impresionante Templo de Kukulcán y otros edificios que reflejan el avanzado conocimiento maya en astronomía y matemáticas. </p>
+    <img src="{{url_for('static',filename='imagenes/Chichén Itzá (México).jpeg' )}}" alt="Chichén Itzá (México)">
+  </div>
+  </div>
+
+            {% endblock %}
